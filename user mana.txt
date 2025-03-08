@@ -1,0 +1,13 @@
+sudo adduser abc
+su - abc
+whoami
+
+sudo addgroup stud
+sudo addusermod stud abc
+groups
+sudo deluser abc stud
+sudo deluser abc
+sudo delgroup abc
+cut --delimiter=: --filed=1 /etc/passwd
+cut --delimiter=: --field=1 /etc/group
+cat /etc/group | cut --delimiter=: --fileds=1,4 | grep user
